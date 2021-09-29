@@ -17,9 +17,9 @@ const showMessage = function (message, color) {
 
 const shareAnalyser = function (e) {
   e.preventDefault();
-  const investedSharePrice = investedPrice.value;
-  const numberOfShares = shareCount.value;
-  const finalSharePrice = finalPrice.value;
+  const investedSharePrice = +investedPrice.value;
+  const numberOfShares = +shareCount.value;
+  const finalSharePrice = +finalPrice.value;
   if (investedSharePrice && numberOfShares && finalSharePrice) {
     if (investedSharePrice < finalSharePrice) {
       showMessage(
